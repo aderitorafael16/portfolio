@@ -1,5 +1,6 @@
-import { Competences } from "./components/Competences"
-import { Profile } from "./components/Profile"
+import { Competences } from "./pages/Competences";
+import { Profile } from "./pages/Profile";
+
 
 export function App() {
   return (
@@ -22,17 +23,8 @@ export function App() {
         </div>
       </header>
       <main className="flex flex-1 flex-col p-6 mt-20 gap-40 items-center">
-        {/*Perfil */}
-        <Profile />
-        
-        {/*Competences */}
-        <Competences />
-        
-        {/*Projects*/}
-        <div id="projects" className="flex flex-row items-center justify-center gap-4"></div>
-
-        {/*Contato */}
-        <div id="contato" className=""></div>
+       <Profile />
+       <Competences />
       </main>
     </div>
   )
